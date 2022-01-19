@@ -1,0 +1,129 @@
+html{                   /*Esto se usa para eliminar el efecto smooth que ya viene para poder crearlo*/
+    scroll-behavior: auto !important;
+}
+
+
+
+
+body{
+   /* esta linea sirve para verificar que este conectado debido que desaparecera si la activamos
+    display: none; 
+    */
+    font-family: "Hervetica";
+}
+/*Nav Bar*/
+    .navbar{
+        background-color: #660066;                    /*fondo del navbar*/
+        position: fixed;                                /*para que no se mueva pero se achica*/
+        width: 100vw;                                   /*vuelve a ocular toda la pantalla*/
+        z-index: 1;                                     /*para que siempre se sobreponga sobre cualquier otro elemento*/
+    }
+
+    .navbar-brand{                                      /*Se aplica a la letra FC*/
+        font-family: "Oswald";
+        font-size: 40px;                                /*Tamaño de la letra*/
+        font-weight: 700;
+    }
+
+/*Hero Section*/
+    #Hero-Section{
+        background-image: url("../img/bg_hero.png");        /*Buscamos la imagen de fondo*/
+        background-repeat: no-repeat;                       /*para que no se repita la imagen si sobra espacio*/
+        background-size: cover;                             /*Se ajusta automaticamente al espacio o dimension disponible*/
+        background-position: center;                        /*Para que la imagen siempre sea el centro*/
+        height: 100vh;                                      /*La da altura*/
+        position: relative;                                 /*Para que podamos usar en la seccion Hero, Left y Top */
+    }
+
+    #Hero-Section div{                                      /*El div que esta dentro del Hero-Section*/
+        position: absolute;
+        bottom: 45px;                                      /*45px de abajo hacia arriba. Si usamos Top iria de arriba hacia abajo*/
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .hero-line{                                             /*Modificar el tamaño de la barra divisora hr*/
+        width: 345px;
+    }
+
+    #Hero-Section h1{                                       /*Modificar el h1 de la section*/
+        font-family: "Oswald" ;
+        font-size: 72px;                                    /*Tamaño de la letra*/
+    }
+
+    #Hero-Section h1:first-child{                          /*Modificar el primer h1 de la section*/
+        font-weight: 200;                                  /*Tamaño de la fuente*/
+    }
+
+    #Hero-Section h1:Last-child{                          /*Modificar el ultimo h1 de la section*/
+        font-weight: 900;                                  /*Tamaño de la fuente*/
+    }
+
+/*Section Sobre Mi*/
+    #Sobre-Mi{
+        color: #373A3C;
+        font-family: "Open Sans";
+        line-height: 3;                                 /*Agregar un interlineado de 3*/
+    }
+
+
+/*Section Mi Experiencia*/
+    #Experiencia div h1{                                 /*Modifica Mi Experiencia*/
+        font-family: "Oswald";
+        font-size: 52px;
+    }
+
+    #Experiencia i{                                    /*apunta a las etiquetas i que son los iconos*/
+        color: #660066;                             /*Modifica el color de los iconos*/
+    }
+
+    #Experiencia div:last-child article h4:first-child{ /*Busca el primer h4 que esta dentro del article del ultimo div de la seccion experiencia*/
+        font-family: "Oswald";
+    }
+
+    #Experiencia div:last-child article h4:last-child{ /*Busca el ultimo h4 que esta dentro del article del ultimo div de la seccion experiencia*/
+        font-family: "Open Sans";
+        font-weight: 300;
+    }
+
+/*Section Mis ultimos trabajos*/
+    #Trabajos{
+        background-color: #660066;
+        font-family: "Oswald";
+    }
+
+    #Trabajos h1{
+        font-size: 52px;
+    }
+
+/*Section Contacto*/
+    #Contacto h1{
+        font-family: "Oswald";
+        font-size: 52px;
+    }
+
+/*Footer*/
+#Footer{
+    background-color: #660066;
+}
+
+#Footer h1{
+    font-family: "Oswald";
+}
+
+#Footer a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
